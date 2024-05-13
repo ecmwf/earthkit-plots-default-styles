@@ -36,11 +36,12 @@ profile = "black"
 add_ignore = ["D1", "D200", "D205", "D400", "D401"]
 convention = "numpy"
 
+[project.entry-points.'earthkit.plots.plugins']
+default = 'default'
+
 [tool.setuptools.packages.find]
+include = ["default"]
 where = ["src/"]
 
-[project.entry-points.'earthkit.plots.styles']
-a = 'default'
-
 [tool.setuptools_scm]
-version_file = "src/_version.py"
+version_file = "src/default/_version.py"
