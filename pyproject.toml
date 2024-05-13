@@ -39,8 +39,8 @@ convention = "numpy"
 [tool.setuptools.packages.find]
 where = ["src/"]
 
-[tool.setuptools_scm]
-version_file = "src/earthkit/data/_version.py"
-
 [project.entry-points.'earthkit.plots.styles']
 a = 'default'
+
+[tool.setuptools_scm]
+version_file = "src/_version.py"
