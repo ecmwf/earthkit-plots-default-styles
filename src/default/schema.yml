@@ -17,16 +17,32 @@
 # more control over matplotlib rcParams, consider using a matplotlib style
 # sheet.
 figure:
-  figsize: [7, 7]
+  figsize: [7, 6]
   dpi: 100
 axes:
-  linewidth: 0.75
+  linewidth: 1
   edgecolor: "#AAAAAA"
+  grid: true
+  grid.axis: y
+  xmargin: 0.02
+  ymargin: 0.02
+  spines.left: false
+  spines.right: false
+  spines.top: false
+  spines.bottom: false
+  prop_cycle: cycler('color', ['#545FA4', '#EB702D', '#FABC20', '#9aa1cb', '#f6bfa2', '#fde19b'])
+xtick:
+  top: false
+  bottom: false
+ytick:
+  left: false
+  right: false
+grid:
+  color: "#EEEEEE"
 font:
   family: Roboto
 text:
   color: "#333333"
-
 
 # *************************************************************************** #
 # * STYLES                                                                  * #
@@ -40,9 +56,12 @@ default_style_levels: 12
 # The style library to use for automatic styling
 style_library: default
 
-# If true, force the use of the default style for a given variable as provided
+# If true, will attempt to use automatic stlying whenever no style is passed
+automatic_styles: true
+
+# If true, force the use of the optimal style for a given variable as provided
 # by the style library, forcing unit conversion if necessary
-use_default_styles: false
+use_preferred_units: false
 
 # EXPERIMENTAL
 # The lat-lon target resolution when interpolating unstructured data
@@ -96,10 +115,11 @@ time_zone: null
 # *************************************************************************** #
 # The following keys can take any valid keyword argument that the corresponding
 # plotting method understands
+line:
+  zorder: 2
+envelope:
+  zorder: 2
 contour:
-  line_colors: "#333333"
-  labels: false
-  linewidths: 0.5
   transform_first: true
 contourf:
   transform_first: true
@@ -146,19 +166,19 @@ boxplot:
 # * AUXILLIARY DATA LAYERS STYLES                                           * #
 # *************************************************************************** #
 coastlines:
-  linewidth: 0.8
-  edgecolor: "#555"
+  linewidth: 0.75
+  edgecolor: "#555555"
   facecolor: none
 borders:
-  linestyle: "--"
+  linestyle: ":"
   linewidth: 0.5
   edgecolor: [0.2, 0.2, 0.2]
   facecolor: none
 countries:
   linestyle: "-"
   linewidth: 0.5
-  edgecolor: grey
-  facecolor: lightgrey
+  edgecolor: white
+  facecolor: "#e8e8e8"
 unit_boundaries:
   linestyle: [0, [5, 8]]
   linewidth: 0.5
@@ -170,9 +190,10 @@ disputed_boundaries:
   edgecolor: [0.75, 0.2, 0.2]
   facecolor: none
 administrative_areas:
-  linestyle: ":"
-  linewidth: 0.5
-  edgecolor: [0.2, 0.2, 0.2]
+  linestyle: "-"
+  linewidth: 0.25
+  edgecolor: [0.6, 0.6, 0.6]
+  resolution: high  # required for some countries
   facecolor: none
 roads:
   linestyle: "-"
@@ -182,11 +203,11 @@ roads:
   facecolor: "none"
 land:
   zorder: 0
-  color: "#E0CBA8"
+  color: "#e8e8e8"
 urban_areas:
-  color: "#bb8d44"
+  color: "#d1d1d1"
 ocean:
-  color: "#97B6E1"
+  color: "#f9f9f9"
 rivers:
   edgecolor: "#97B6E1"
 lakes:
@@ -197,7 +218,7 @@ shapes:
   linewidth: 0.5
   edgecolor: black
 gridlines:
-  linewidth: 0.75
+  linewidth: 0.5
   linestyle: "-"
   color: "#bbb"
   alpha: 0.8

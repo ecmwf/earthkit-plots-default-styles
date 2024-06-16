@@ -1,4 +1,4 @@
-id: 2m-temperature
+id: near-surface-air-temperature
 
 criteria:
 - {paramId: 167, shortName: 2t}

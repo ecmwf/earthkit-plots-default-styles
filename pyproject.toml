@@ -1,5 +1,8 @@
 [build-system]
-requires = ["setuptools>=61", "setuptools-scm>=8.0"]
+requires = [
+  "setuptools>=61",
+  "setuptools-scm>=8"
+]
 
 [project]
 authors = [
@@ -25,9 +28,8 @@ license = {text = "Apache License Version 2.0"}
 name = "earthkit-plots-default-styles"
 readme = "README.md"
 requires-python = ">= 3.8"
-
-[project.urls]
-Repository = "https://github.com/ecmwf/earthkit-plots-default-styles/"
+urls.Issues = "https://github.com/ecmwf/earthkit-plots.issues"
+urls.Repository = "https://github.com/ecmwf/earthkit-plots-default-styles/"
 
 [tool.isort]
 profile = "black"
