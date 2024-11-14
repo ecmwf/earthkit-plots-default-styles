@@ -67,6 +67,39 @@ use_preferred_units: false
 # The lat-lon target resolution when interpolating unstructured data
 interpolate_target_resolution: 1
 
+interactive_box:
+  quantiles: [0, 0.1, 0.25, 0.5, 0.75, 0.9, 1.0]
+  fillcolor: "#b3c6ff"
+  line_color: "#0040ff"
+  line_width: 1.5
+
+interactive_layout:
+  colorway:
+  - '#636EFA'
+  - '#EF553B'
+  - '#00CC96'
+  - '#AB63FA'
+  - '#FFA15A'
+  - '#19D3F3'
+  - '#FF6692'
+  - '#B6E880'
+  - '#FF97FF'
+  - '#FECB52'
+  hovermode: x
+  plot_bgcolor: white
+  xaxis:
+    gridwidth: 1
+    showgrid: false
+    showline: false
+    zeroline: false
+  yaxis:
+    linecolor: black
+    gridcolor: '#EEEEEE'
+    showgrid: true
+    showline: true
+    zeroline: false
+  height: 750
+  showlegend: False
 
 # *************************************************************************** #
 # * QUICKPLOT WORKFLOW                                                      * #
