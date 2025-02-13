@@ -1,26 +1,26 @@
 ---
-id: temperature-at-850hPa
-optimal: TEMPERATURE_AT_850HPA_IN_CELSIUS
+id: near-surface-air-temperature
+optimal: TEMPERATURE_AT_2M_IN_CELSIUS
 
 styles:
 
-  TEMPERATURE_AT_850HPA_IN_CELSIUS:
+  TEMPERATURE_AT_2M_IN_CELSIUS:
     type: Style
-    colors: rainbow
+    colors: turbo
     extend: both
     levels: range(-40, 41, 2)
     units: celsius
 
-  TEMPERATURE_AT_850HPA_IN_KELVIN:
+  TEMPERATURE_AT_2M_IN_KELVIN:
     type: Style
-    colors: rainbow
+    colors: turbo
     extend: both
     levels: range(230, 311, 2)
     units: K
 
-  TEMPERATURE_AT_850HPA_IN_FAHRENHEIT:
+  TEMPERATURE_AT_2M_IN_FAHRENHEIT:
     type: Style
-    colors: rainbow
+    colors: turbo
     extend: both
     levels: range(-40, 101, 5)
     units: fahrenheit

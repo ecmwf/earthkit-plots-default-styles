@@ -1,0 +1,12 @@
+---
+id: river-discharge-6-hours
+optimal: RIVER_DISCHARGE_6_HOURS_IN_M3_S-1
+
+styles:
+
+  RIVER_DISCHARGE_6_HOURS_IN_M3_S-1:
+    type: Style    
+    colors: Blues
+    levels: [0.1, 0.5, 1, 2, 5, 10, 50, 100, 500, 1000, 2000, 3000, 4000]
+    extend: max
+    units: m3 s-1
