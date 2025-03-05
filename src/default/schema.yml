@@ -235,12 +235,12 @@ borders:
     - key: BRK_A3
       values: ["B57"]
       kwargs:
-        linestyle: [0, [2, 4]]
+        linestyle: "dotted"
     - key: BRK_A3
       values: ["B89"]
       kwargs:
         linewidth: 0
-        linestyle: [0, [2, 4]]
+        linestyle: "dotted"
 countries:
   linestyle: "-"
   linewidth: 0.5
