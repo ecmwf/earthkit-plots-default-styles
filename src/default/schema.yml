@@ -51,7 +51,7 @@ text:
 default_cmap: plasma
 
 # The number of levels to use in default styles
-default_style_levels: 10
+default_style_levels: 12
 
 # The style library to use for automatic styling
 style_library: default
@@ -71,7 +71,7 @@ use_preferred_units: false
 
 # EXPERIMENTAL
 # The lat-lon target resolution when interpolating unstructured data
-interpolate_target_resolution: 0.2
+interpolate_target_resolution: 0.1
 
 interactive_box:
   quantiles: [0, 0.1, 0.25, 0.5, 0.75, 0.9, 1.0]
@@ -164,6 +164,7 @@ envelope:
   zorder: 2
 contour:
   regrid: true
+  labels: true
   transform_first: true
 isolines:
   regrid: true
@@ -192,8 +193,9 @@ barbs:
     spacing: 0.25
   regrid_shape: 30
 quiver:
-  # scale: 0.0006
-  scale_units: "xy"
+  angles: xy
+  scale_units: xy
+  scale: 0.0006
   regrid_shape: 30
 scatter:
   s: 36
