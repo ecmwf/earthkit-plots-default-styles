@@ -1,7 +1,7 @@
 id: soil-wetness-index
 
 criteria:
-- {long_name: Soil wetness index (root zone)}
+- {paramId: 231026, shortName: swir }
 - {name: Soil wetness index (root zone)}
 - {name: swir }
 - {shortName: swir }

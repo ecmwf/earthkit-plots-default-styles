@@ -1,6 +1,0 @@
-id: river-discharge-24-hours
-
-criteria:
-- {long_name: Mean discharge in the last 24 hours}
-- {name: Mean discharge in the last 24 hours}
-- {name: dis24}
