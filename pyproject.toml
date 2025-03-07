@@ -39,10 +39,10 @@ add_ignore = ["D1", "D200", "D205", "D400", "D401"]
 convention = "numpy"
 
 [project.entry-points.'earthkit.plots.plugins']
-default = 'earthkit.plots.styles.default'
+default = 'earthkit_plots_default_styles'
 
 [tool.setuptools.packages.find]
 where = ["src/"]
 
 [tool.setuptools_scm]
-version_file = "src/earthkit/plots/styles/default/_version.py"
+version_file = "src/earthkit_plots_default_styles/_version.py"
