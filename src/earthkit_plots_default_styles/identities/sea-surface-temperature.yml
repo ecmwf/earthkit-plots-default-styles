@@ -5,3 +5,4 @@ criteria:
 - {standard_name: sea_surface_temperature}
 - {standard_name: sea_surface_skin_temperature}
 - {long_name: sea surface temperature}
+- {long_name: Sea surface temperature}

@@ -6,7 +6,7 @@ styles:
 
   MEAN_SEA_LEVEL_PRESSURE_IN_PA:
     type: Contour
-    line_colors: "#33334d"
+    linecolors: "#33334d"
     linewidths: [0.5, 0.5, 0.5, 1]
     labels: true
     levels:
@@ -16,7 +16,7 @@ styles:
 
   MEAN_SEA_LEVEL_PRESSURE_IN_HPA:
     type: Contour
-    line_colors: "#33334d"
+    linecolors: "#33334d"
     linewidths: [0.5, 0.5, 0.5, 1]
     labels: true
     levels:
