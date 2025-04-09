@@ -17,7 +17,7 @@
 # more control over matplotlib rcParams, consider using a matplotlib style
 # sheet.
 figure:
-  figsize: [7, 6]
+  figsize: [8, 7]
   dpi: 100
 axes:
   linewidth: 1
@@ -56,8 +56,14 @@ default_style_levels: 12
 # The style library to use for automatic styling
 style_library: default
 
+# The color mode - if "magics" will use named colors from the Magics library
+color_mode: null
+
 # If true, will attempt to use automatic stlying whenever no style is passed
 automatic_styles: true
+
+# The format to use for units
+units_format: "~E"
 
 # If true, force the use of the optimal style for a given variable as provided
 # by the style library, forcing unit conversion if necessary
@@ -65,13 +71,15 @@ use_preferred_units: false
 
 # EXPERIMENTAL
 # The lat-lon target resolution when interpolating unstructured data
-interpolate_target_resolution: 1
+interpolate_target_resolution: 0.1
 
 interactive_box:
   quantiles: [0, 0.1, 0.25, 0.5, 0.75, 0.9, 1.0]
   fillcolor: "#b3c6ff"
   line_color: "#0040ff"
   line_width: 1.5
+
+reference_fontsize: 12
 
 interactive_layout:
   colorway:
@@ -104,10 +112,12 @@ interactive_layout:
 # *************************************************************************** #
 # * QUICKPLOT WORKFLOW                                                      * #
 # *************************************************************************** #
-quickmap_workflow:
+quickmap_subplot_workflow:
+  - title
+
+quickmap_figure_workflow:
   - coastlines
   - gridlines
-  - title
   - legend
 
 quickplot_workflow: []
@@ -153,8 +163,16 @@ line:
 envelope:
   zorder: 2
 contour:
+  regrid: true
+  labels: true
   transform_first: true
+isolines:
+  regrid: true
+  transform_first: true
+  linewidths: 1
+  labels: true
 contourf:
+  regrid: true
   transform_first: true
 point:
   marker: o
@@ -164,14 +182,21 @@ legend:
 title:
   wrap: true
   horizontalalignment: center
-  fontsize: 12
+suptitle:
+  wrap: true
+  horizontalalignment: center
+  fontsize: 14
 barbs:
   length: 4
   linewidth: 0.5
   sizes:
     spacing: 0.25
-  color: "#555"
-quiver: {}
+  regrid_shape: 30
+quiver:
+  angles: xy
+  scale_units: xy
+  scale: 0.0006
+  regrid_shape: 30
 scatter:
   s: 36
   edgecolors: black
@@ -179,16 +204,16 @@ scatter:
     color: none
     hatch: ////////
   linewidths: 0.5
-gridpoints:
-  s: 4
+grid_points:
+  s: 8
   marker: .
   edgecolors: null
   missing_values: null
   z: false
-  color: red
+  c: red
   legend_style: null
 point_cloud:
-  s: 12
+  s: 5
   marker: o
   edgecolors: null
 boxplot:
@@ -203,10 +228,19 @@ coastlines:
   edgecolor: "#555555"
   facecolor: none
 borders:
-  linestyle: ":"
   linewidth: 0.5
-  edgecolor: [0.2, 0.2, 0.2]
+  edgecolor: "#999999"
   facecolor: none
+  special_styles:
+    - key: BRK_A3
+      values: ["B57"]
+      kwargs:
+        linestyle: "dotted"
+    - key: BRK_A3
+      values: ["B89"]
+      kwargs:
+        linewidth: 0
+        linestyle: "dotted"
 countries:
   linestyle: "-"
   linewidth: 0.5
