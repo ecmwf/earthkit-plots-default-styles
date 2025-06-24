@@ -1,0 +1,10 @@
+WIND_GUST_AT_10M_IN_M_S-1_TURBULENCE:
+  type: Style
+  colors: turbulence
+  levels: [12, 15, 20, 25, 30, 35, 50]
+  extend: max
+  units: m s-1
+  metadata:
+    description: |
+      Wind gust at 10 meters above ground level in the last 6 hours, using the turbulence color map
+      and levels from 12 to 50 m·s⁻¹, in increments that reflect typical wind gust speeds.

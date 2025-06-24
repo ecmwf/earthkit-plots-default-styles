@@ -1,0 +1,24 @@
+
+RIVER_DISCHARGE_6H_EUROPE_IN_M3_S-1:
+  type: Style
+  colors: Blues
+  levels: [0.1, 0.25, 0.5, 1, 2, 5, 10, 25, 50, 100, 500, 1000, 2000]
+  extend: max
+  units: m3 s-1
+  metadata:
+    description: |
+      Mean river discharge in the last 6 hours for Europe, using the Blues color map
+      and levels from 0.1 to 2000 m³·s⁻¹, in increments that reflect typical river discharge rates
+      over European rivers.
+
+RIVER_DISCHARGE_6H_GLOBAL_IN_M3_S-1:
+  type: Style
+  colors: Blues
+  levels: [0.1, 10, 50, 200, 1000, 3000, 7500, 10000, 30000, 70000, 100000, 200000]
+  extend: max
+  units: m3 s-1
+  metadata:
+    description: |
+      Mean river discharge in the last 6 hours for the world, using the Blues color map
+      and levels from 0.1 to 200000 m³·s⁻¹, in increments that reflect typical river discharge rates
+      across global rivers.

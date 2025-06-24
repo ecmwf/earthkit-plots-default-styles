@@ -1,0 +1,11 @@
+name: turbulence
+
+colors:
+  - "#85AAEE"   # light blue
+  - "#208EFC"   # deep blue
+  - "#6CA632"   # green
+  - "#FFB000"   # orange
+  - "#FF0000"   # red
+  - "#7A11B1"   # purple
+
+missing_values: "#ffffff00" 

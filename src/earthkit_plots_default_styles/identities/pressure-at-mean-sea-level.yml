@@ -1,0 +1,17 @@
+---
+id: mean-sea-level-pressure
+
+criteria:
+- {paramId: 151, shortName: msl}
+- {standard_name: air_pressure_at_sea_level}
+- {long_name: Mean sea level pressure}
+
+default_units: hPa
+
+styles:
+  hPa:
+    - MEAN_SEA_LEVEL_PRESSURE_IN_HPA_CONTOUR_BLUE
+    - MEAN_SEA_LEVEL_PRESSURE_IN_HPA_CONTOUR_BLACK
+  Pa:
+    - MEAN_SEA_LEVEL_PRESSURE_IN_PA_CONTOUR
+    - MEAN_SEA_LEVEL_PRESSURE_IN_PA_CONTOUR_BLACK

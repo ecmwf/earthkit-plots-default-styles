@@ -1,4 +1,5 @@
-id: near-surface-air-temperature
+---
+id: temperature-at-2m
 
 criteria:
 - {paramId: 167, shortName: 2t}
@@ -13,3 +14,13 @@ criteria:
 - {long_name: Mean 2 metre temperature}
 - {long_name: screen level temperature}
 - {stash_code: 3236}
+
+default_units: celsius
+
+styles:
+  celsius:
+    - TEMPERATURE_AT_2M_IN_CELSIUS_TURBO
+  kelvin:
+    - TEMPERATURE_AT_2M_IN_KELVIN_TURBO
+  fahrenheit:
+    - TEMPERATURE_AT_2M_IN_FAHRENHEIT_TURBO

@@ -1,10 +1,15 @@
+---
 id: river-discharge
 
 criteria:
 - {long_name: Mean discharge in the last 6 hours}
-- {long_name: Mean discharge in the last 24 hours}
-- {name: Mean discharge in the last 24 hours}
 - {name: Mean discharge in the last 6 hours}
-- {name: dis24}
 - {name: dis06}
 - {paramId: 240023}
+
+default_units: m3 s-1
+
+styles:
+  m3 s-1:
+    - RIVER_DISCHARGE_6H_EUROPE_IN_M3_S-1
+    - RIVER_DISCHARGE_6H_WORLD_IN_M3_S-1

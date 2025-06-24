@@ -1,0 +1,15 @@
+---
+id: temperature-at-850hPa
+
+criteria:
+- {standard_name: air_temperature, isobaricInhPa: 850}
+
+default_units: celsius
+
+styles:
+  celsius:
+    - TEMPERATURE_AT_850HPA_IN_CELSIUS_TURBO
+  kelvin:
+    - TEMPERATURE_AT_850HPA_IN_KELVIN_TURBO
+  fahrenheit:
+    - TEMPERATURE_AT_850HPA_IN_FAHRENHEIT_TURBO

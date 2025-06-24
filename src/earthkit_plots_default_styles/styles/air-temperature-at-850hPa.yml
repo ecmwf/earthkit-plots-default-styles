@@ -1,0 +1,32 @@
+TEMPERATURE_AT_850HPA_IN_CELSIUS_TURBO:
+  type: Style
+  colors: turbo
+  extend: both
+  levels: range(-70, 60, 4)
+  units: celsius
+  metadata:
+    description: |
+      850hPa air temperature in Celsius, using the turbo color map and levels
+      from -70 to 60 degrees Celsius in increments of 4 degrees.
+
+TEMPERATURE_AT_850HPA__IN_KELVIN_TURBO:
+  type: Style
+  colors: turbo
+  extend: both
+  levels: range(200, 330, 4)
+  units: K
+  metadata:
+    description: |
+      850hPa air temperature in Kelvin, using the turbo color map and levels
+      from 200 to 330 Kelvin in increments of 4 Kelvin.
+
+TEMPERATURE_AT_850HPA__IN_FAHRENHEIT_TURBO:
+  type: Style
+  colors: turbo
+  extend: both
+  levels: range(-94, 140, 8)
+  units: fahrenheit
+  metadata:
+    description: |
+      850hPa air temperature in Fahrenheit, using the turbo color map and levels
+      from -94 to 140 degrees Fahrenheit in increments of 8 degrees.

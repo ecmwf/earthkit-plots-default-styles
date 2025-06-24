@@ -1,0 +1,35 @@
+TEMPERATURE_AT_2M_IN_CELSIUS_TURBO:
+  type: Style
+  colors: turbo
+  extend: both
+  levels: range(-40, 41, 2)
+  units: celsius
+  metadata:
+    description: |
+      Near-surface air temperature at 2 meters above ground level in Celsius,
+      using the turbo color map and levels from -40 to 40 degrees Celsius
+      in increments of 2 degrees.
+
+TEMPERATURE_AT_2M_IN_KELVIN_TURBO:
+  type: Style
+  colors: turbo
+  extend: both
+  levels: range(230, 311, 2)
+  units: K
+  metadata:
+    description: |
+      Near-surface air temperature at 2 meters above ground level in Kelvin,
+      using the turbo color map and levels from 230 to 310 Kelvin
+      in increments of 2 Kelvin.
+
+TEMPERATURE_AT_2M_IN_FAHRENHEIT_TURBO:
+  type: Style
+  colors: turbo
+  extend: both
+  levels: range(-40, 101, 5)
+  units: fahrenheit
+  metadata:
+    description: |
+      Near-surface air temperature at 2 meters above ground level in Fahrenheit,
+      using the turbo color map and levels from -40 to 100 degrees Fahrenheit
+      in increments of 5 degrees.

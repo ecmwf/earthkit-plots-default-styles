@@ -1,0 +1,11 @@
+---
+id: wind-gust-at-10m-6h
+
+criteria:
+- {long_name: '10 metre wind gust in the last 6 hours'}
+
+default_units: m s-1
+
+units:
+  m s-1:
+    - WIND_GUST_AT_10M_IN_M_S-1_TURBULENCE
