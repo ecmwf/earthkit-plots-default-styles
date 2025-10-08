@@ -23,22 +23,19 @@ axes:
   linewidth: 1
   edgecolor: "#AAAAAA"
   grid: true
-  grid.axis: y
   xmargin: 0.02
   ymargin: 0.02
-  spines.left: false
-  spines.right: false
-  spines.top: false
-  spines.bottom: false
   prop_cycle: cycler('color', ['#545FA4', '#EB702D', '#FABC20', '#9aa1cb', '#f6bfa2', '#fde19b'])
 xtick:
   top: false
   bottom: false
+  color: "#333333"
 ytick:
   left: false
   right: false
+  color: "#333333"
 grid:
-  color: "#EEEEEE"
+  color: "#F2F2F2"
 font:
   family: Roboto
 text:
@@ -160,6 +157,7 @@ time_zone: null
 # plotting method understands
 line:
   zorder: 2
+  linewidth: 1
 envelope:
   zorder: 2
 contour:
@@ -239,7 +237,6 @@ borders:
     - key: BRK_A3
       values: ["B89"]
       kwargs:
-        linewidth: 0
         linestyle: "dotted"
 countries:
   linestyle: "-"
