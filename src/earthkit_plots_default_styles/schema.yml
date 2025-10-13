@@ -192,8 +192,7 @@ barbs:
   regrid_shape: 30
 quiver:
   angles: xy
-  scale_units: xy
-  scale: 0.0006
+  pivot: middle
   regrid_shape: 30
 scatter:
   s: 36
