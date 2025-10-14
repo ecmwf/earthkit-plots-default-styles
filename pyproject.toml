@@ -24,7 +24,7 @@ classifiers = [
 dependencies = []
 description = "Default styles for use with earthkit-plots"
 dynamic = ["version"]
-license = {text = "Apache License Version 2.0"}
+license-expression = "Apache-2.0"
 name = "earthkit-plots-default-styles"
 readme = "README.md"
 requires-python = ">= 3.8"
