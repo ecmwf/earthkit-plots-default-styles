@@ -238,6 +238,7 @@ borders:
       kwargs:
         linestyle: "dotted"
 countries:
+  zorder: 0
   linestyle: "-"
   linewidth: 0.5
   edgecolor: white
